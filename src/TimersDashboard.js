@@ -1,7 +1,7 @@
 import React from 'react'
 import EditableTimerList from './EditableTimerList'
 import ToggleableTimerForm from './ToggleableTimerForm'
-import uuid from './vendor/uuid'
+import { v4 } from 'uuid'
 
 class TimersDashboard extends React.Component{
   constructor(props){
@@ -12,14 +12,14 @@ class TimersDashboard extends React.Component{
         {
           title: 'Practice squat',
           project: 'Gym Chores',
-          id: uuid.v4(),
+          id: v4(),
           elapsed: 5456099,
           runningSince: Date.now(),
         },
         {
           title: 'Bake squash',
           project: 'Kitchen Chores',
-          id: uuid.v4(),
+          id: v4(),
           elapsed: 1273998,
           runningSince: null,
         }
