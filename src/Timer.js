@@ -1,5 +1,5 @@
 import React from 'react'
-import helpers from './helpers'
+import helpers from './helpers.js'
 
 class Timer extends React.Component{
   render(){
